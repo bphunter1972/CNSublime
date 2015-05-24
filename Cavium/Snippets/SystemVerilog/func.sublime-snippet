@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+////////////////////////////////////////////
+// func: ${1:name}
+// ${2:docstring}
+${3:virtual }function ${4:void} ${1:name}(${5:arguments});
+   ${6}
+endfunction : $1
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>func</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.systemverilog</scope>
+</snippet>

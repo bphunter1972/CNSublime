@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+uvm_config_db#(${1:uvm_object})::set(this, "${2:path}", "${3:variable}", ${4:value});
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>uvm_config_set</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.systemverilog</scope>
+</snippet>

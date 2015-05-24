@@ -1,0 +1,6 @@
+[
+    { "keys": ["super+alt+m"], "command": "toggle_middle" },
+    { "keys": ["super+alt+down"], "command": "find_next_error" },
+    { "keys": ["super+alt+up"], "command": "find_prev_error"}, 
+    { "keys": ["super+alt+g"], "command": "prompt_goto_time" },
+]

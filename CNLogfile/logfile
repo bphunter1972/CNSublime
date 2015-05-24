@@ -1,0 +1,207 @@
+Command: sim/.vcomp_VCS_226565fe1a5449a87d0c10bf209927e4/simvTBV -l sim/basic/logfile +sim_dir=sim/basic +hdl_top=switb_tb_top +dbg=200 +OVM_VERBOSITY=200 +UVM_VERBOSITY=200 +cfg_file= +bug_file=../../verif/bugs.bdf +verrtime=0 -cm_dir coverage/coverage -cg_coverage_control=0 +UVM_TESTNAME=basic_test_c +projmode=uvm +showlev +fsdb_siglist=sim/basic/.signal_list +fsdb_outfile=sim/basic/verilog.fsdb +fsdb_trace +memcbk +fsdb+trans_begin_callstack +sps_enable_port_recording +fsdbTrans +fsdbLogOff +fsdb+dumpoff+2147483640 +rand_sync +ntb_random_seed=1 +tbvTestName= +vcs+lic+wait +lint=noPCTIO-L,noPCTI-L +warn=noRT-ISV -assert nopostproc +ntb_solver_opt=bs +seed=1 +seed_file=sim/basic/seed.log +from_host=cahw-vnc2:52395 +chip_pass=1.0 +err=10 +UVM_MAX_QUIT_COUNT=10,0
+Chronologic VCS simulator copyright 1991-2012
+Contains Synopsys proprietary information.
+Compiler version G-2012.09-SP1-1_Full64; Runtime version G-2012.09-SP1-1_Full64;  Aug 19 09:23 2013
+*Verdi3* Loading libsscore_vcs201209.so
+*Verdi3* : Enable Parallel Dumping.
+----------------------------------------------------------------
+UVM-1.1d
+(C) 2007-2013 Mentor Graphics Corporation
+(C) 2007-2013 Cadence Design Systems, Inc.
+(C) 2006-2013 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+----------------------------------------------------------------
+UVM_INFO @ 0: reporter [NSTVERB] Non-standard verbosity value, using provided '200'.
+UVM_INFO project/verif/hdl/tbv_common.v(48) @ 0: vlog [vlog] REPORT FILTER ON /\*Verdi3\* FSDB WARNING: The FSDB file already exists/ [switb_tb_top]
+FSDB Dumper for VCS, Release Verdi3_2013.07, Linux x86_64/64bit, 07/04/2013
+(C) 1996 - 2013 by Synopsys, Inc.
+*Verdi3* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi3* : Create FSDB file 'sim/basic/verilog.fsdb'
+*Verdi3* : Begin traversing the scopes, layer (0).
+*Verdi3* : Enable +all dumping.
+*Verdi3* : End of traversing.
+%I-(      tbv_common.v: 185)[vlog                          ]{      0.000} Running simulation with seed: 1 [switb_tb_top.start_uvm]
+%I-(                  :   0)[reporter                      ]{      0.000} Running test basic_test_c...
+%I-(      tbv_common.v: 202)[vlog                          ]{      0.000} Disabling assertions in the RTL [switb_tb_top.assertion_disable]
+Stopping new assertion attempts at time 0fs: level = 0 arg = switb_tb_top (from inst switb_tb_top (project/verif/hdl/tbv_common.v:203))
+Starting assertion attempts at time 0fs: level = 1 arg = switb_tb_top (from inst switb_tb_top (project/verif/hdl/tbv_common.v:204))
+%I-(                  :   0)[reporter                      ]{      0.000} '+UVM_MAX_QUIT_COUNT=10,0' provided on the command line is being applied.
+%I-(     global_env.sv: 296)[global_env                    ]{      0.000} Entered phase: connect
+Registered callbacks for all instances of uvm_reg
+---------------------------------------------------------------
+No callbacks registered for any instances of type uvm_reg
+global_csr_print_cbs   on (*)  ON
+%I-(     global_env.sv: 296)[global_env                    ]{      0.000} Entered phase: end_of_elaboration
+%I-(     global_env.sv: 296)[global_env                    ]{      0.000} Entered phase: start_of_simulation
+%I-(global_watchdog.sv:  75)[global_env.watchdog           ]{      0.000} Global Watchdog Timer set to 100000ns.
+%I-(     global_env.sv: 400)[global_env                    ]{      0.000} Printing the  topology at depth 4:
+-----------------------------------------------------------------------------
+Name                          Type                         Size  Value       
+-----------------------------------------------------------------------------
+<unnamed>                     uvm_root                     -     @41         
+   uvm_test_top               basic_test_c                 -     @512        
+      env                     swi_pkg::env_c               -     @910        
+         m2s_mon              swi_pkg::m2s_mon_c           -     @1009       
+            item_port         uvm_analysis_port            -     @1037       
+            intf_name         string                       8     swi_intf    
+            recording_detail  uvm_verbosity                32    UVM_FULL    
+         mac_agent            swi_pkg::mac_agent_c         -     @1000       
+            arb_req_agent     swi_pkg::arb_req_agent_c     -     @1202       
+            m2s_agent         swi_pkg::m2s_agent_c         -     @1186       
+            m2s_cr_agent      swi_pkg::cr_agent_c          -     @1194       
+            m2s_item_port     uvm_analysis_port            -     @1115       
+            mac_vsqr          swi_pkg::mac_vsqr_c          -     @1210       
+            s2m_cr_export     uvm_analysis_export          -     @1053       
+            s2m_cr_fifo       uvm_tlm_analysis_fifo #(T)   -     @1062       
+            s2m_item_export   uvm_analysis_export          -     @1124       
+            s2m_item_fifo     uvm_tlm_analysis_fifo #(T)   -     @1133       
+            is_active         uvm_active_passive_enum      1     UVM_ACTIVE  
+            num_peers         integral                     32    'd0         
+            recording_detail  uvm_verbosity                32    UVM_FULL    
+         s2m_mon              swi_pkg::s2m_mon_c           -     @1017       
+            item_port         uvm_analysis_port            -     @1933       
+            intf_name         string                       8     swi_intf    
+            recording_detail  uvm_verbosity                32    UVM_FULL    
+         sli_agent            swi_pkg::sli_agent_c         -     @989        
+            arb_grant_vsqr    swi_pkg::arb_grant_vsqr_c    -     @1966       
+            s2m_agent         swi_pkg::s2m_agent_c         -     @1949       
+            s2m_item_port     uvm_analysis_port            -     @1957       
+            is_active         uvm_active_passive_enum      1     UVM_ACTIVE  
+            num_macs          integral                     32    'd0         
+            recording_detail  uvm_verbosity                32    UVM_FULL    
+         mac_active           uvm_active_passive_enum      1     UVM_ACTIVE  
+         sli_active           uvm_active_passive_enum      1     UVM_ACTIVE  
+         recording_detail     uvm_verbosity                32    UVM_FULL    
+      global_env              global_pkg::env_c            -     @522        
+         heartbeat_mon        global_pkg::heartbeat_mon_c  -     @2275       
+            enabled           integral                     1     'h1         
+            sample_time_ns    integral                     32    'd5000      
+            permit_overrides  integral                     1     'h1         
+            starting_phase    starting_phase_e             32    CONFIG_PHASE
+            trace_mode        integral                     1     'h0         
+            quiet             integral                     1     'h0         
+            recording_detail  uvm_verbosity                32    UVM_FULL    
+         watchdog             global_pkg::watchdog_c       -     @2267       
+            watchdog_time     integral                     32    'd100000    
+            recording_detail  uvm_verbosity                32    UVM_FULL    
+         run_count            integral                     32    'd1         
+         topo_depth           integral                     32    'd4         
+         recording_detail     uvm_verbosity                32    UVM_FULL    
+      tb_clk_drv              cn_pkg::clk_drv_c            -     @930        
+         rsp_port             uvm_analysis_port            -     @947        
+            recording_detail  uvm_verbosity                32    UVM_FULL    
+         seq_item_port        uvm_seq_item_pull_port       -     @938        
+            recording_detail  uvm_verbosity                32    UVM_FULL    
+         intf_name            string                       9     tb_clk_vi   
+         init_delay_ps        integral                     32    'd0         
+         init_value           integral                     1     'd0         
+         period_ps            integral                     32    'd2000      
+         divisor              integral                     32    'd1         
+         init_x               integral                     1     'd0         
+         jitter_enable        integral                     1     'h0         
+         coverage_enable      integral                     32    'h0         
+         precision            clk_precision_e              32    CN_1PS      
+         enable               integral                     1     1           
+         recording_detail     uvm_verbosity                32    UVM_FULL    
+      tb_rst_drv              cn_pkg::rst_drv_c            -     @960        
+         rsp_port             uvm_analysis_port            -     @977        
+            recording_detail  uvm_verbosity                32    UVM_FULL    
+         seq_item_port        uvm_seq_item_pull_port       -     @968        
+            recording_detail  uvm_verbosity                32    UVM_FULL    
+         intf_name            string                       9     tb_rst_vi   
+         active_low           integral                     1     'h1         
+         x_time_ps            integral                     32    'd0         
+         reset_time_ps        integral                     32    'd20000     
+         drive_dcok           integral                     1     'h0         
+         dcok_time_ps         integral                     32    'd0         
+         drive_start_bist     integral                     1     'h0         
+         drive_clear_bist     integral                     1     'h0         
+         use_bist_complete    integral                     1     'h0         
+         start_bist_time_ps   integral                     32    'd0         
+         drain_time_ps        integral                     32    'd0         
+         clocked              integral                     1     'h0         
+         recording_detail     uvm_verbosity                32    UVM_FULL    
+      recording_detail        uvm_verbosity                32    UVM_FULL    
+   vlog                       uvm_component                -     @468        
+-----------------------------------------------------------------------------
+
+%I-(     global_env.sv: 296)[global_env                    ]{      0.000} Entered phase: run
+%I-(+_heartbeat_mon.sv: 189)[global_env.heartbeat_mon      ]{      0.000} Heartbeat monitor disabled because no components were added to it.
+%I-(global_watchdog.sv:  84)[global_env.watchdog           ]{      0.000} Waiting for watchdog timeout at 100000ns...
+%I-(     logfile: 165)[tb_clk_drv                    ]{      0.000} Starting tb_clk_drv: period_ps=2000ps divisor=1 init_value=0 init_delay_ps=0 init_x=0 precision=CN_1PS
+%I-(     global_env.sv: 467)[global_env                    ]{      0.000} Welcome to the testbench! [host:cahw17 jobid:5729342]
+%I-(     global_env.sv: 296)[global_env                    ]{      0.000} Entered phase: pre_reset
+%I-(     cn_rst_drv.sv: 178)[tb_rst_drv                    ]{      0.000} Starting reset driver on interface tb_rst_vi. active_low=1, x_time_ps=0, reset_time_ps=20000, drive_dcok=0 dcok_time_ps=0 drive_start_bist=0 start_bist_time_ps=0 use_bist_complete=0
+%I-(      cn_msg_tag.v:  37)[vlog                          ]{      1.000} Using a msg_tag of 'vlog' [switb_tb_top.cn_msg_tag]
+%I-(     global_env.sv: 296)[global_env                    ]{     20.000} Entered phase: reset
+%I-(     cn_rst_drv.sv: 210)[tb_rst_drv                    ]{     20.000} reset phase run count 1
+%I-(      tbv_common.v: 206)[vlog                          ]{     20.000} Enabling assertions in the RTL [switb_tb_top.assertion_disable]
+Starting assertion attempts at time 20000000fs: level = 0 arg = * (from inst switb_tb_top (project/verif/hdl/tbv_common.v:207))
+%I-(     cn_rst_drv.sv: 234)[tb_rst_drv                    ]{     40.000} Reset driver on interface tb_rst_vi complete.
+%I-(     global_env.sv: 296)[global_env                    ]{     40.000} Entered phase: post_reset
+%I-(     global_env.sv: 296)[global_env                    ]{     40.000} Entered phase: pre_configure
+%I-(     CNLogfile.py: 102)[global_env                    ]{     40.000} Entered phase: configure
+%I-(     global_env.sv: 296)[global_env                    ]{    140.000} Entered phase: post_configure
+%I-(     global_env.sv: 296)[global_env                    ]{    140.000} Entered phase: pre_main
+%I-(     global_env.sv: 296)[global_env                    ]{    140.000} Entered phase: main
+%I-(     global_env.sv: 296)[global_env                    ]{    140.000} Entered phase: post_main
+%I-(     global_env.sv: 296)[global_env                    ]{    140.000} Entered phase: pre_shutdown
+
+Error-[NOA] Null object access
+../../verif/vkits/swi/swi_sli_agent.sv, 162
+  The object at dereference depth 1 is being used before it was 
+  constructed/allocated.
+  Please make sure that the object is allocated before using it. 
+  
+  #0 in \sli_agent_c::connect_phase  at 
+  ../../verif/vkits/swi/swi_sli_agent.sv:162
+  #1 in \uvm_connect_phase::exec_func  at 
+  project/verif/vkits/uvm/1_1d/src/base/uvm_common_phases.svh:96
+  #2 in \uvm_bottomup_phase::execute  at 
+  project/verif/vkits/uvm/1_1d/src/base/uvm_bottomup_phase.svh:108
+  #3 in \uvm_bottomup_phase::traverse  at 
+  project/verif/vkits/uvm/1_1d/src/base/uvm_bottomup_phase.svh:81
+  #4 in \uvm_bottomup_phase::traverse  at 
+  project/verif/vkits/uvm/1_1d/src/base/uvm_bottomup_phase.svh:61
+  #5 in \uvm_bottomup_phase::traverse  at 
+  project/verif/vkits/uvm/1_1d/src/base/uvm_bottomup_phase.svh:61
+  #6 in \uvm_bottomup_phase::traverse  at 
+  project/verif/vkits/uvm/1_1d/src/base/uvm_bottomup_phase.svh:61
+  #7 in \uvm_phase::execute_phase  at 
+  project/verif/vkits/uvm/1_1d/src/base/uvm_phase.svh:1156
+  #8 in \uvm_phase::m_run_phases  at 
+  project/verif/vkits/uvm/1_1d/src/base/uvm_phase.svh:1847
+  
+%I-(     global_env.sv: 296)[global_env                    ]{    140.000} Entered phase: shutdown
+%I-(     global_env.sv: 296)[global_env                    ]{    140.000} Entered phase: post_shutdown
+%I-(     global_env.sv: 296)[global_env                    ]{    142.000} Entered phase: extract
+%I-(     global_env.sv: 296)[global_env                    ]{    142.000} Entered phase: check
+%I-(     global_env.sv: 296)[global_env                    ]{    142.000} Entered phase: report
+%I-(     global_env.sv: 296)[global_env                    ]{    142.000} Entered phase: final
+*************************************************************************
+Testbench Stats
+	  Sim host: cahw17
+	    Job ID: 5729342
+	      Seed: 1
+	  Sim time: 142.00ns
+	  Cyc time: 2.00ns
+	 Real time: 0.90s
+	 User time: 0.52s
+	  Sys time: 0.04s
+	 Cycle/sec: 126.79
+*************************************************************************
+
+--- UVM Report Summary ---
+
+Quit count :     0 of    10
+** Report counts by severity
+UVM_INFO :   37
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+$finish called from file "project/verif/vkits/uvm/1_1d/src/base/uvm_root.svh", line 430.
+$finish at simulation time     142.000ns
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 142000000 fs
+CPU Time:      0.520 seconds;       Data structure size:   0.8Mb
+Mon Aug 19 09:23:59 2013

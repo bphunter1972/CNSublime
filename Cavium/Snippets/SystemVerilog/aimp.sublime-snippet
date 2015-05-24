@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+// var: ${1:name}_imp
+// ${2:docstring}
+uvm_analysis_imp_${3:impname} #(${4:type}, ${5:class}) ${1:name}_imp${6};
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>aimp</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.systemverilog</scope>
+</snippet>

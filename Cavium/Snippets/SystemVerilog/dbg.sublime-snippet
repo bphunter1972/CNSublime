@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+`cn_dbg(${1:level}, ("${2:text}", ${3:vars}))
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>dbg</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.systemverilog</scope>
+</snippet>

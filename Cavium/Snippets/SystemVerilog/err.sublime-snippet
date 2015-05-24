@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+`cn_err(("${1:message}", ${2:vars}))
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>err</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <scope>source.systemverilog</scope>
+</snippet>

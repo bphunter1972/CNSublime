@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[
+`uvm_field_enum(${1:type}, ${2:var}, ${3:UVM_DEFAULT})
+]]></content>
+    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+    <tabTrigger>field_enum</tabTrigger>
+    <!-- Optional: Set a scope to limit where the snippet will trigger -->
+    <!-- <scope>source.python</scope> -->
+</snippet>
