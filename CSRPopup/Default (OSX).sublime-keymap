@@ -1,0 +1,4 @@
+[
+    { "keys": ["f11"], "command": "cavm_csr_popup" },
+    { "keys": ["shift+f11"], "command": "cavm_csr_open_url" },
+]
