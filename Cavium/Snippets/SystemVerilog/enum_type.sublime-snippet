@@ -3,7 +3,7 @@
 // enum: ${1:name}_e
 // ${2:Documentation}
 typedef enum ${3:type} { 
-    ${4:stuff}
+   ${4:stuff}
 } ${1}_e;
 
 ]]></content>
